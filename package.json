@@ -1,0 +1,14 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently -k yarn:start:api yarn:start:ui",
+    "start:api": "yarn --cwd api start",
+    "start:ui": "yarn --cwd ui start"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
